@@ -1,0 +1,19 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+
+<polymer-element name="lorem-element" attributes="mycolor textinput">
+<template>
+
+<p style="color:{{ mycolor }}">{{ textinput }}</p>
+
+</template>
+
+<script type="text/javascript">
+	
+Polymer('lorem-element', {
+	mycolor: 'brown',
+	textinput: 'no input'
+});
+
+</script>
+</polymer-element>

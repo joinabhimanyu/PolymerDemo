@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport">
+<title>Polymer Demo</title>
+<link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/styles.min.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/uikit.min.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/uikit.almost-flat.min.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/uikit.gradient.min.css">
+<script type="text/javascript" src="bower_components/platform/platform.js"></script>
+<script type="text/javascript" src="public/js/jquery-1.10.2.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="public/js/uikit.min.js"></script>
+
+<link rel="import" href="lorem-element.html">
+</head>
+
+<body>
+<div class="container">
+<div class="row">
+<div class="page-header">
+<h2>Example page header</h2>
+</div>
+<div class="panel-group" id="accordian">
+	<div class="panel panel-primary" id="panel1">
+	<div class="panel-heading">
+	<h3 class="panel-title">
+		<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Panel 1</a>
+		<button class="uk-button" data-uk-modal="{target: '#first-modal'}">Show more</button>
+	</h3>
+	</div>
+	<div id="collapseOne" class="panel-collapse collapse in">
+	<div class="panel-body">
+	<lorem-element textinput="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor mauris venenatis placerat mollis. Pellentesque sed mi id lorem interdum hendrerit vitae eget dolor. Proin vel orci condimentum, posuere risus a, aliquam sapien. Sed in massa tempor, sollicitudin orci vel; aliquam nulla."></lorem-element>
+	</div>
+	</div>
+	</div>
+
+	<div class="panel panel-primary" id="panel2">
+	<div class="panel-heading">
+	<h3 class="panel-title">
+		<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Panel 2</a>
+		<button class="uk-button" data-uk-modal="{target: '#second-modal'}">Show more</button>
+	</h3>
+	</div>
+	<div id="collapseTwo" class="panel-collapse collapse in">
+	<div class="panel-body">
+	<lorem-element textinput="Another big Lorem ipsum text.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor mauris venenatis placerat mollis. Pellentesque sed mi id lorem interdum hendrerit vitae eget dolor."></lorem-element>
+	</div>
+	</div>
+	</div>
+
+	<div class="panel panel-primary" id="panel3">
+	<div class="panel-heading">
+	<h3 class="panel-title">
+		<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Panel 3</a>
+		<button class="uk-button" data-uk-modal="{target: '#third-modal'}">Show more</button>
+	</h3>
+	</div>
+	<div id="collapseThree" class="panel-collapse collapse in">
+	<div class="panel-body">
+	<lorem-element textinput="This is the third paragraph with the lorem ipsum text.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor mauris venenatis placerat mollis. Pellentesque sed mi id lorem interdum hendrerit vitae eget dolor."></lorem-element>
+	</div>
+	</div>
+	</div>
+
+</div>
+</div>
+
+<div id="first-modal" class="uk-modal">
+<div class="uk-modal-dialog">
+<a class="uk-modal-close uk-close"></a>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tempor lectus! Aenean suscipit sed ipsum vel vestibulum. Aenean egestas lobortis odio sed faucibus. Mauris et libero vulputate, viverra est vitae, ullamcorper urna! Cras dignissim in risus commodo ullamcorper. Praesent purus sem, ullamcorper eget eros non, hendrerit imperdiet nulla. Morbi at elit nec elit euismod tincidunt.
+</div>
+</div>
+
+<div id="second-modal" class="uk-modal">
+<div class="uk-modal-dialog uk-modal-dialog-frameless">
+<a href="#" class="uk-modal-close uk-close uk-close-alt"></a>
+<img src="http://c.s-microsoft.com/en-in/CMSImages/Win_HonestlyDeviceBG_1129_1600x540_EN_US.jpg?version=9523ac7b-4fe2-a90e-07d4-5101b3b081f4" alt="" style="width:1200px;height:300px;">
+</div>
+</div>
+
+<div id="third-modal" class="uk-modal">
+<div class="uk-modal-dialog uk-modal-dialog-large">
+<a href="#" class="uk-modal-close uk-close"></a>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tempor nisl. Vivamus id eleifend ligula. Mauris nec sollicitudin mi. Suspendisse ullamcorper lectus id blandit semper. In faucibus, lorem at fermentum lobortis, arcu ipsum consequat neque, ac vestibulum erat leo eu metus. Etiam non sodales magna. Proin leo magna, rutrum sit amet erat a, feugiat eleifend ipsum. Maecenas odio nulla, faucibus fermentum sapien vel, hendrerit pretium orci. Nullam id urna vel lorem laoreet sollicitudin quis quis risus. Aliquam at turpis tortor. Aenean scelerisque turpis et erat posuere, porttitor fringilla arcu consequat. Sed lorem magna, blandit aliquam mi varius, scelerisque tincidunt libero! Nulla scelerisque, ipsum et tristique aliquet, dui sapien dictum augue, ac elementum tellus mi at turpis.
+</div>
+</div>
+
+</div>
+</body>
+</html>
